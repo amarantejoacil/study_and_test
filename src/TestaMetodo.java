@@ -7,7 +7,14 @@ public class TestaMetodo {
         boolean conseguiuRetirar = contaDoPaulo.saca(500);
 
         System.out.println(contaDoPaulo.saldo);
-        System.out.println(conseguiuRetirar);
+        System.out.println("conseguiuRetirar: " + conseguiuRetirar);
+
+        Conta contaDaMarcela = new Conta();
+        contaDaMarcela.deposita(1000);
+
+        boolean conseguiuTransferir = contaDaMarcela.transfere(1200, contaDoPaulo);
+        System.out.println("conseguiuTransferir: " + conseguiuTransferir);
+
 
     }
 }
