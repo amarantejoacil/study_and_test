@@ -1,7 +1,7 @@
-public class Conta {
-    double saldo;
-    int agencia;
-    int numero;
+public class ContaEncaps {
+    private double saldo;
+    private int agencia;
+    private int numero;
 
     Cliente titular;
 
@@ -18,7 +18,7 @@ public class Conta {
         }
     }
 
-    public boolean transfere(double valor, Conta conta_destino){
+    public boolean transfere(double valor, ContaEncaps conta_destino){
         if(this.saldo >= valor){
             this.saldo -= valor;
             conta_destino.deposita(valor);
