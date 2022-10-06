@@ -3,6 +3,17 @@ public class ContaEncaps {
     private int agencia;
     private int numero;
     private ClienteEncaps titular;
+    private static int total;
+
+    //substituir construtor padrao do java
+    public ContaEncaps(int agencia, int numero){
+        total ++;
+        System.out.println("total de conta: " + total);
+        this.numero = numero;
+        this.agencia = agencia;
+        System.out.println("numero: " + this.numero + " conta: " + this.agencia);
+
+    }
 
 
     public double getSaldo(){
@@ -69,6 +80,10 @@ public class ContaEncaps {
             return false;
         }
 
+    }
+
+    public static int getTotal(){
+        return ContaEncaps.total;
     }
 
 
