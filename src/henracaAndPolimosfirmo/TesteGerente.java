@@ -9,7 +9,8 @@ public class TesteGerente {
         g1.setSalario(5000.0);
 
 
-        System.out.println(g1.getNome() + " | " + g1.getCpf() + " | " + g1.getSalario() + g1.getBonificacao());
+
+        System.out.println(g1.getNome() + " | " + g1.getCpf() + " | " + g1.getSalario() + " | " + g1.getBonificacao());
 
         g1.setSenha(222);
         boolean autentica = g1.autentica(222);

@@ -21,6 +21,7 @@ public class Gerente extends Funcionario {
         return super.getBonificacao();
     }
 
+
     //    public double getBonificacao(){
 //        //super = o atribulto salario é da classe pai
 ////        return ( this.salario * 0.1) + super.salario;

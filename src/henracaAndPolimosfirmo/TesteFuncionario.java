@@ -8,6 +8,7 @@ public class TesteFuncionario {
         funcionario.setSalario(2000);
 
         System.out.println(funcionario.getNome());
+        System.out.println(funcionario.getSalario());
         System.out.println(funcionario.getBonificacao());
 
     }
