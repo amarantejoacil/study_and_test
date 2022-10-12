@@ -3,7 +3,7 @@ package henracaAndPolimosfirmo;
 public class Mamifero {
     private boolean possui_olhos;
     private String mensagem;
-    private String velocidade_corrida;
+    private int velocidade_corrida;
 
     public String getMensagem() {
         return mensagem;
@@ -21,11 +21,17 @@ public class Mamifero {
         this.possui_olhos = possui_olhos;
     }
 
-    public String getVelocidade_corrida() {
+    public int getVelocidade_corrida() {
         return velocidade_corrida;
     }
 
-    public void setVelocidade_corrida(String velocidade_corrida) {
+    public void setVelocidade_corrida(int velocidade_corrida) {
         this.velocidade_corrida = velocidade_corrida;
     }
+
+    public int get_velocidade_maxima(int velocidade_corrida){
+        return velocidade_corrida * 2;
+    }
+
+
 }

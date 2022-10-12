@@ -11,4 +11,10 @@ public class Cachorro extends Mamifero {
     public void setPorte(String porte) {
         Porte = porte;
     }
+
+    @Override
+    public int get_velocidade_maxima(int velocidade_corrida){
+        return velocidade_corrida * 4;
+    }
+
 }

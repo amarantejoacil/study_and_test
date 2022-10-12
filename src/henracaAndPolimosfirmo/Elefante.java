@@ -10,4 +10,9 @@ public class Elefante extends Cachorro {
     public void setTromba(boolean tromba) {
         Tromba = tromba;
     }
+
+    @Override
+    public int get_velocidade_maxima(int velocidade_corrida){
+        return velocidade_corrida * 3;
+    }
 }
