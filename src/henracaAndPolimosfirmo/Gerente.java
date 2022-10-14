@@ -2,6 +2,7 @@ package henracaAndPolimosfirmo;
 
 public class Gerente extends Funcionario {
 
+
     private int senha;
 
     public void setSenha(int senha) {
@@ -18,7 +19,8 @@ public class Gerente extends Funcionario {
 
     @Override
     public double getBonificacao() {
-        return super.getBonificacao();
+        System.out.println("bonificação gerente");
+        return super.getBonificacao() + this.getSalario();
     }
 
 

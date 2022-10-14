@@ -1,6 +1,6 @@
 package henracaAndPolimosfirmo;
 
-public class Funcionario {
+public class Funcionario  {
     private String nome;
     private String cpf;
     private double salario;
@@ -10,6 +10,7 @@ public class Funcionario {
     }
 
     public double getBonificacao(){
+        System.out.println("bonificação funcionario");
         return this.salario * 0.1;
     }
 
