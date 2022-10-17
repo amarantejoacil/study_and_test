@@ -29,6 +29,7 @@ public class Mamifero {
         this.velocidade_corrida = velocidade_corrida;
     }
 
+    //POLIMORFICOS, UTILIZANDO MESMO METODO COM IMPLEMENTAÇÃO DIFERENTE NAS FILHAS
     public int get_velocidade_maxima(int velocidade_corrida){
         return velocidade_corrida * 2;
     }
