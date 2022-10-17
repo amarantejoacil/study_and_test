@@ -1,6 +1,11 @@
 package ClassesAndMetodosAbastratos;
 
-public class Gerente extends Funcionario{
+//extends Funcionio e interface Autenticavel
+public class Gerente extends Funcionario implements Autenticavel{
+
+    private String senha = "55";
+
+
 
 
     @Override
@@ -10,4 +15,19 @@ public class Gerente extends Funcionario{
     }
 
 
+    @Override
+    public void setSenha(String senha) {
+        this.senha = senha;
+
+    }
+
+    @Override
+    public boolean autentica(String senha) {
+        System.out.println("senha sistema: " + senha + " senha: gerente:" + this.senha);
+        if(this.senha == senha){
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
