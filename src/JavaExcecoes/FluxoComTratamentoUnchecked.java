@@ -1,12 +1,12 @@
 package JavaExcecoes;
 
-public class FluxoComTratamento {
+public class FluxoComTratamentoUnchecked {
 
     public static void main(String[] args) {
         System.out.println("Ini do main");
         try {
             metodo1();
-        } catch (ArithmeticException | NullPointerException ex){
+        } catch (ArithmeticException | NullPointerException | MinhaExcecaoeUnchecked ex){
             String msg = ex.getMessage();
             System.out.println("Excecao: " + msg);
             ex.printStackTrace();
@@ -30,7 +30,8 @@ public class FluxoComTratamento {
 
          //forma simplificada
         //Para lançar uma exceção, além de instanciá-la, é necessário lançá-la através do throw.
-          throw  new ArithmeticException("deu errado");
+//          throw  new ArithmeticException("deu errado");
+          throw  new MinhaExcecaoeUnchecked("deu muito errado");
 
 
 //        System.out.println("Fim do metodo2");
