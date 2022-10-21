@@ -1,5 +1,6 @@
 package JavaExcecoes;
 
+
 public class ConexaoFinally implements AutoCloseable {
 
     public ConexaoFinally() {
