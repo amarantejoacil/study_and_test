@@ -13,7 +13,6 @@ public class TestaConexao {
         }
 
 
-
 //        Testando de maneira sem fechamento automatico
 //        ConexaoFinally con = new ConexaoFinally();
 //        try {
