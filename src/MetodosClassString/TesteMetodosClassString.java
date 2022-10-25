@@ -6,12 +6,14 @@ public class TesteMetodosClassString {
     public static void main(String[] args) {
 
 
+        String texto_zero = "joacil amarante";
         String texto_um = "JOACIL AMARNATE";
         String texto_dois = "VITORIA GRACILIANA";
         String texto_tres = "GOIABA";
         String encontrar_quatro = "Este texto é interessante!";
         String encontrar_cinco = "       Este texto é interessante! ";
         String string_vazio = "";
+        int idade = 20;
 
 
         texto_um = texto_um.replace("A","a");
@@ -38,6 +40,17 @@ public class TesteMetodosClassString {
 
         System.out.println(encontrar_cinco.contains("contains: " + "interessante"));
 
+
+        System.out.println("imprimindo tipo da variavel: " + texto_um.getClass().getSimpleName());
+
+
+        System.out.println("--------------TESTE compareTo E compareToIgnoreCase-------------------");
+        System.out.println(texto_zero.compareTo("joacil amarante") == 0 ? true : false);
+        System.out.println(texto_zero.compareTo("Joacil amarante") == 0 ? true : false);
+        System.out.println(texto_zero.compareToIgnoreCase("JOACIL amarante") == 0 ? true : false);
+
+
+        System.out.println("convertendo int em string: " + String.valueOf(idade));
 
 
 
