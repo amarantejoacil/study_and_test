@@ -9,7 +9,6 @@ public class TesteArrayReferencia {
         //criando array de contas
         Conta[] contas = new Conta[5];
 
-
         //criando uma conta
         Conta c1 = new Conta(11,11);
 
