@@ -1,6 +1,7 @@
 package JavaCollection;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TestandoListas {
     /** Classe com objetivo de testar listas
@@ -12,9 +13,9 @@ public class TestandoListas {
 
     public static void main(String[] args) {
 
-        String aula1 = "Aula de Matemática";
-        String aula2 = "Aula de Geografia";
-        String aula3 = "Aula de Ciência";
+        String aula1 = "Matemática";
+        String aula2 = "Geografia";
+        String aula3 = "Ciência";
 
         ArrayList<String> aulas = new ArrayList<>();
         aulas.add(aula1);
@@ -43,7 +44,15 @@ public class TestandoListas {
             System.out.println("segundo comando : " + aula);
         });
 
-        
+
+        System.out.println("TESTANDO ORDENAÇÃO UTILIZANDO COLLECTION - SORT");
+
+
+        System.out.println("antes de ordenar" + aulas);
+        Collections.sort(aulas);
+        System.out.println("depois de ordenar" + aulas);
+
+
 
 
     }
