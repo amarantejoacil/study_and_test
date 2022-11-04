@@ -10,6 +10,8 @@ public class Curso {
 
     private Set<AlunoSet> alunos = new HashSet<>();
 
+    private Map<Integer, AlunoSet> matriculaParaAluno = new HashMap<>();
+
 
     public Curso(String nome, String instrutor) {
         this.nome = nome;
@@ -39,10 +41,28 @@ public class Curso {
 
     public void matriculaAluno(AlunoSet aluno){
         this.alunos.add(aluno);
+        this.matriculaParaAluno.put(aluno.getNumMatricula(),aluno);
     }
 
     public boolean estaMatricula(AlunoSet a1) {
         return this.alunos.contains(a1);
         //verificar se existe o aluno a1 dentro da lista javaColecoes
+    }
+
+    public AlunoSet buscaMatricula(int matricula_entrada) {
+        if(!matriculaParaAluno.containsKey(matricula_entrada))
+            throw new NoSuchElementException();
+
+        return matriculaParaAluno.get(matricula_entrada);
+
+
+
+//        for (AlunoSet aluno: alunos ) {
+//            if(aluno.getNumMatricula() == matricula_entrada){
+//                return aluno;
+//            }
+//        }
+
+//        throw new NoSuchElementException("matricula não encontrada: " + matricula_entrada);
     }
 }

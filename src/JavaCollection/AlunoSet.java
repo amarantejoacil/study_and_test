@@ -1,9 +1,13 @@
 package JavaCollection;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class AlunoSet {
 
     private String nome;
     private int numMatricula;
+
 
     public AlunoSet(String nome, int numMatricula){
         if(nome == null){
