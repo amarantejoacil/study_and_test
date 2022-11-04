@@ -1,15 +1,14 @@
 package JavaCollection;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class Curso {
 
     private String nome;
     private String instrutor;
     private List<Aula> aulas = new LinkedList<Aula>();
+
+    private Set<AlunoSet> alunos = new HashSet<>();
 
 
     public Curso(String nome, String instrutor) {
@@ -30,9 +29,20 @@ public class Curso {
 //        return aulas;
     }
 
+    public Set<AlunoSet> getAlunos() {
+        return Collections.unmodifiableSet(alunos);
+    }
 
     public void adiciona(Aula aula){
         this.aulas.add(aula);
     }
 
+    public void matriculaAluno(AlunoSet aluno){
+        this.alunos.add(aluno);
+    }
+
+    public boolean estaMatricula(AlunoSet a1) {
+        return this.alunos.contains(a1);
+        //verificar se existe o aluno a1 dentro da lista javaColecoes
+    }
 }

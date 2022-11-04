@@ -1,6 +1,8 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 
 public class ArrayListVSLinkendList_TESTE {
 
@@ -10,10 +12,12 @@ public class ArrayListVSLinkendList_TESTE {
 
         List<Integer> numerosArrayList = new ArrayList<>();
         List<Integer> numerosLinkedList = new LinkedList<>();
+
         int quantidadeElementos = 1000000;
 
         long tempoArrayList  = insereElementosNo(numerosArrayList, quantidadeElementos);
         long tempoLinkedList = insereElementosNo(numerosLinkedList, quantidadeElementos);
+
 
         System.out.println("Inserção na ArrayList demorou  " + tempoArrayList);
         System.out.println("Inserção na LinkedList demorou " + tempoLinkedList);
