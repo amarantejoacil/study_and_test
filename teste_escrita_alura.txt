@@ -1,0 +1,3 @@
+exemplo lendo arquivo
+joacil
+maria
