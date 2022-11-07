@@ -1,1 +1,3 @@
-teste alura
+exemplo lendo arquivo
+joacil
+maria
